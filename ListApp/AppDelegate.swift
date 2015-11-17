@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
         
-        let message = "Hello"
+        let message: String! = nil
+        NSLog(message)
+        
         return true
     }
 
